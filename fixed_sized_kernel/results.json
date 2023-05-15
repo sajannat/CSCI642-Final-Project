@@ -1,0 +1,332 @@
+{ "traceEvents":[{}
+,{"args":{"name":"CPU HIP API"},"ph":"M","pid":2,"name":"process_name","sort_index":0}
+,{"args":{"name":"COPY"},"ph":"M","pid":1,"name":"process_name","sort_index":1}
+,{"args":{"name":"GPU0"},"ph":"M","pid":6,"name":"process_name","sort_index":2}
+,{"ph":"X","name":"CopyHostToDevice","pid":"1","tid":"0","ts":"10755141111355","dur":"701",
+  "args":{
+    "BeginNs":"10755141111355528",
+    "EndNs":"10755141112057288",
+    "dev-id":"0",
+    "queue-id":"0",
+    "Name":"CopyHostToDevice",
+    "pid":"1974653",
+    "tid":"1974653",
+    "stream-id":"0",
+    "Data":"",
+    "DurationNs":"701760"
+  }
+}
+,{"ph":"X","name":"CopyDeviceToHost","pid":"1","tid":"0","ts":"10755141120818","dur":"2883",
+  "args":{
+    "BeginNs":"10755141120818704",
+    "EndNs":"10755141123702216",
+    "dev-id":"0",
+    "queue-id":"0",
+    "Name":"CopyDeviceToHost",
+    "pid":"1974653",
+    "tid":"1974653",
+    "stream-id":"0",
+    "Data":"",
+    "DurationNs":"2883512"
+  }
+}
+,{"ph":"X","name":"hipMalloc","pid":"2","tid":"1974653","ts":"10755140888881","dur":"81",
+  "args":{
+    "BeginNs":"10755140888881809",
+    "EndNs":"10755140888963176",
+    "pid":"1974653",
+    "tid":"1974653",
+    "Name":"hipMalloc",
+    "args":"( ptr(0x7f1402000000) size(53462970))",
+    "Data":"",
+    "DurationNs":"81367"
+  }
+}
+,{"ph":"X","name":"hipEventCreate","pid":"2","tid":"1974653","ts":"10755140888976","dur":"2",
+  "args":{
+    "BeginNs":"10755140888976376",
+    "EndNs":"10755140888979240",
+    "pid":"1974653",
+    "tid":"1974653",
+    "Name":"hipEventCreate",
+    "args":"( event(0x58dca0))",
+    "Data":"",
+    "DurationNs":"2864"
+  }
+}
+,{"ph":"X","name":"hipEventCreate","pid":"2","tid":"1974653","ts":"10755140888986","dur":"2",
+  "args":{
+    "BeginNs":"10755140888986783",
+    "EndNs":"10755140888989157",
+    "pid":"1974653",
+    "tid":"1974653",
+    "Name":"hipEventCreate",
+    "args":"( event(0x58dd60))",
+    "Data":"",
+    "DurationNs":"2374"
+  }
+}
+,{"ph":"X","name":"hipMemcpy","pid":"2","tid":"1974653","ts":"10755140889001","dur":"223382",
+  "args":{
+    "BeginNs":"10755140889001450",
+    "EndNs":"10755141112383877",
+    "pid":"1974653",
+    "tid":"1974653",
+    "Name":"hipMemcpy",
+    "args":"( dst(0x7f1402000000) src(0x7f14345ba010) sizeBytes(53462970) kind(1))",
+    "Data":"",
+    "DurationNs":"223382427"
+  }
+}
+,{"ph":"X","name":"hipEventRecord","pid":"2","tid":"1974653","ts":"10755141112395","dur":"17",
+  "args":{
+    "BeginNs":"10755141112395750",
+    "EndNs":"10755141112413700",
+    "pid":"1974653",
+    "tid":"1974653",
+    "Name":"hipEventRecord",
+    "args":"( event(0x58dca0) stream(1))",
+    "Data":"",
+    "DurationNs":"17950"
+  }
+}
+,{"ph":"X","name":"__hipPushCallConfiguration","pid":"2","tid":"1974653","ts":"10755141112425","dur":"4",
+  "args":{
+    "BeginNs":"10755141112425503",
+    "EndNs":"10755141112429833",
+    "pid":"1974653",
+    "tid":"1974653",
+    "Name":"__hipPushCallConfiguration",
+    "args":"( gridDim({}) blockDim({}) sharedMem(0) stream(1))",
+    "Data":"",
+    "DurationNs":"4330"
+  }
+}
+,{"ph":"X","name":"__hipPopCallConfiguration","pid":"2","tid":"1974653","ts":"10755141112437","dur":"2",
+  "args":{
+    "BeginNs":"10755141112437376",
+    "EndNs":"10755141112440170",
+    "pid":"1974653",
+    "tid":"1974653",
+    "Name":"__hipPopCallConfiguration",
+    "args":"( gridDim({}) blockDim({}) sharedMem(0) stream(1))",
+    "Data":"",
+    "DurationNs":"2794"
+  }
+}
+,{"ph":"X","name":"hipLaunchKernel","pid":"2","tid":"1974653","ts":"10755141112448","dur":"408",
+  "args":{
+    "BeginNs":"10755141112448272",
+    "EndNs":"10755141112856572",
+    "pid":"1974653",
+    "tid":"1974653",
+    "Name":"hipLaunchKernel",
+    "args":"( kernel(image_gamma(unsigned char*, float, int)) function_address(0x2019e8) numBlocks({}) dimBlocks({}) args(0x7fff62bf1958) sharedMemBytes(0) stream(1))",
+    "Data":"",
+    "DurationNs":"408300"
+  }
+}
+,{"ph":"X","name":"hipEventRecord","pid":"2","tid":"1974653","ts":"10755141112877","dur":"9",
+  "args":{
+    "BeginNs":"10755141112877385",
+    "EndNs":"10755141112886814",
+    "pid":"1974653",
+    "tid":"1974653",
+    "Name":"hipEventRecord",
+    "args":"( event(0x58dd60) stream(1))",
+    "Data":"",
+    "DurationNs":"9429"
+  }
+}
+,{"ph":"X","name":"hipEventSynchronize","pid":"2","tid":"1974653","ts":"10755141112894","dur":"1029",
+  "args":{
+    "BeginNs":"10755141112894427",
+    "EndNs":"10755141113924396",
+    "pid":"1974653",
+    "tid":"1974653",
+    "Name":"hipEventSynchronize",
+    "args":"( event(0x58dd60))",
+    "Data":"",
+    "DurationNs":"1029969"
+  }
+}
+,{"ph":"X","name":"hipMemcpy","pid":"2","tid":"1974653","ts":"10755141113933","dur":"10146",
+  "args":{
+    "BeginNs":"10755141113933895",
+    "EndNs":"10755141124080565",
+    "pid":"1974653",
+    "tid":"1974653",
+    "Name":"hipMemcpy",
+    "args":"( dst(0x7f14345ba010) src(0x7f1402000000) sizeBytes(53462970) kind(2))",
+    "Data":"",
+    "DurationNs":"10146670"
+  }
+}
+,{"ph":"X","name":"hipEventElapsedTime","pid":"2","tid":"1974653","ts":"10755141124090","dur":"3",
+  "args":{
+    "BeginNs":"10755141124090483",
+    "EndNs":"10755141124094324",
+    "pid":"1974653",
+    "tid":"1974653",
+    "Name":"hipEventElapsedTime",
+    "args":"( ms(1.4964) start(0x58dca0) stop(0x58dd60))",
+    "Data":"",
+    "DurationNs":"3841"
+  }
+}
+,{"ph":"X","name":"hipFree","pid":"2","tid":"1974653","ts":"10755142262536","dur":"81",
+  "args":{
+    "BeginNs":"10755142262536855",
+    "EndNs":"10755142262618221",
+    "pid":"1974653",
+    "tid":"1974653",
+    "Name":"hipFree",
+    "args":"( ptr(0x7f1402000000))",
+    "Data":"",
+    "DurationNs":"81366"
+  }
+}
+,{"ph":"X","name":"image_gamma(unsigned char*, float, int)","pid":"6","tid":"1","ts":"10755141112865","dur":"1045",
+  "args":{
+    "BeginNs":"10755141112865684",
+    "EndNs":"10755141113911042",
+    "dev-id":"0",
+    "queue-id":"0",
+    "Name":"image_gamma(unsigned char*, float, int)",
+    "pid":"1974653",
+    "tid":"1974653",
+    "stream-id":"1",
+    "Data":"",
+    "DurationNs":"1045358"
+  }
+}
+,{"ts":10755141111355,"ph":"s","cat":"DataFlow","id":0,"pid":2,"tid":1974653,"name":"dep"}
+,{"ts":10755141111355,"ph":"t","cat":"DataFlow","id":0,"pid":1,"tid":0,"name":"dep"}
+,{"ts":10755141120818,"ph":"s","cat":"DataFlow","id":1,"pid":2,"tid":1974653,"name":"dep"}
+,{"ts":10755141120818,"ph":"t","cat":"DataFlow","id":1,"pid":1,"tid":0,"name":"dep"}
+,{"ts":10755141112856,"ph":"s","cat":"DataFlow","id":3,"pid":2,"tid":1974653,"name":"dep"}
+,{"ts":10755141112865,"ph":"t","cat":"DataFlow","id":3,"pid":6,"tid":1,"name":"dep"}
+],
+"otherData": {
+    "CMD": "rocminfo",
+    "HSASystemAttributes.RuntimeVersion": "1.1",
+    "HSASystemAttributes.SystemTimestampFreq.": "1000.000000MHz",
+    "HSASystemAttributes.Sig.MaxWaitDuration": "18446744073709551615(0xFFFFFFFFFFFFFFFF)(timestampcount)",
+    "HSASystemAttributes.MachineModel": "LARGE",
+    "HSASystemAttributes.SystemEndianness": "LITTLE",
+    "Agent1.Name": "AMDEPYC7302P16-CoreProcessor",
+    "Agent1.Uuid": "CPU-XX",
+    "Agent1.MarketingName": "AMDEPYC7302P16-CoreProcessor",
+    "Agent1.VendorName": "CPU",
+    "Agent1.Feature": "Nonespecified",
+    "Agent1.Profile": "FULL_PROFILE",
+    "Agent1.FloatRoundMode": "NEAR",
+    "Agent1.MaxQueueNumber": "0(0x0)",
+    "Agent1.QueueMinSize": "0(0x0)",
+    "Agent1.QueueMaxSize": "0(0x0)",
+    "Agent1.QueueType": "MULTI",
+    "Agent1.Node": "0",
+    "Agent1.DeviceType": "CPU",
+    "Agent1.CacheInfo.L1": "32768(0x8000)KB",
+    "Agent1.ChipID": "0(0x0)",
+    "Agent1.CachelineSize": "64(0x40)",
+    "Agent1.MaxClockFreq.(MHz)": "3000",
+    "Agent1.BDFID": "0",
+    "Agent1.InternalNodeID": "0",
+    "Agent1.ComputeUnit": "32",
+    "Agent1.SIMDsperCU": "0",
+    "Agent1.ShaderEngines": "0",
+    "Agent1.ShaderArrs.perEng.": "0",
+    "Agent1.WatchPtsonAddr.Ranges": "1",
+    "Agent1.Features": "None",
+    "Agent1.PoolInfo.Pool1.Segment": "GLOBAL",
+    "Agent1.PoolInfo.Pool1.FLAGS": "FINEGRAINED",
+    "Agent1.PoolInfo.Pool1.Size": "131843292(0x7dbc4dc)KB",
+    "Agent1.PoolInfo.Pool1.Allocatable": "TRUE",
+    "Agent1.PoolInfo.Pool1.AllocGranule": "4KB",
+    "Agent1.PoolInfo.Pool1.AllocAlignment": "4KB",
+    "Agent1.PoolInfo.Pool1.Accessiblebyall": "TRUE",
+    "Agent1.PoolInfo.Pool2.Segment": "GLOBAL",
+    "Agent1.PoolInfo.Pool2.FLAGS": "KERNARG,FINEGRAINED",
+    "Agent1.PoolInfo.Pool2.Size": "131843292(0x7dbc4dc)KB",
+    "Agent1.PoolInfo.Pool2.Allocatable": "TRUE",
+    "Agent1.PoolInfo.Pool2.AllocGranule": "4KB",
+    "Agent1.PoolInfo.Pool2.AllocAlignment": "4KB",
+    "Agent1.PoolInfo.Pool2.Accessiblebyall": "TRUE",
+    "Agent1.PoolInfo.Pool3.Segment": "GLOBAL",
+    "Agent1.PoolInfo.Pool3.FLAGS": "COARSEGRAINED",
+    "Agent1.PoolInfo.Pool3.Size": "131843292(0x7dbc4dc)KB",
+    "Agent1.PoolInfo.Pool3.Allocatable": "TRUE",
+    "Agent1.PoolInfo.Pool3.AllocGranule": "4KB",
+    "Agent1.PoolInfo.Pool3.AllocAlignment": "4KB",
+    "Agent1.PoolInfo.Pool3.Accessiblebyall": "TRUE",
+    "Agent2.Name": "gfx1030",
+    "Agent2.Uuid": "GPU-bfb96ea7c351b9b3",
+    "Agent2.MarketingName": "AMDRadeonPROW6800",
+    "Agent2.VendorName": "AMD",
+    "Agent2.Feature": "KERNEL_DISPATCH",
+    "Agent2.Profile": "BASE_PROFILE",
+    "Agent2.FloatRoundMode": "NEAR",
+    "Agent2.MaxQueueNumber": "128(0x80)",
+    "Agent2.QueueMinSize": "64(0x40)",
+    "Agent2.QueueMaxSize": "131072(0x20000)",
+    "Agent2.QueueType": "MULTI",
+    "Agent2.Node": "1",
+    "Agent2.DeviceType": "GPU",
+    "Agent2.CacheInfo.L1": "16(0x10)KB",
+    "Agent2.CacheInfo.L2": "4096(0x1000)KB",
+    "Agent2.CacheInfo.L3": "131072(0x20000)KB",
+    "Agent2.ChipID": "29603(0x73a3)",
+    "Agent2.CachelineSize": "64(0x40)",
+    "Agent2.MaxClockFreq.(MHz)": "2555",
+    "Agent2.BDFID": "768",
+    "Agent2.InternalNodeID": "1",
+    "Agent2.ComputeUnit": "60",
+    "Agent2.SIMDsperCU": "2",
+    "Agent2.ShaderEngines": "8",
+    "Agent2.ShaderArrs.perEng.": "2",
+    "Agent2.WatchPtsonAddr.Ranges": "4",
+    "Agent2.Features": "KERNEL_DISPATCH",
+    "Agent2.FastF16Operation": "TRUE",
+    "Agent2.WavefrontSize": "32(0x20)",
+    "Agent2.WorkgroupMaxSize": "1024(0x400)",
+    "Agent2.WorkgroupMaxSizeperDimension.x": "1024(0x400)",
+    "Agent2.WorkgroupMaxSizeperDimension.y": "1024(0x400)",
+    "Agent2.WorkgroupMaxSizeperDimension.z": "1024(0x400)",
+    "Agent2.MaxWavesPerCU": "32(0x20)",
+    "Agent2.MaxWork-itemPerCU": "1024(0x400)",
+    "Agent2.GridMaxSize": "4294967295(0xffffffff)",
+    "Agent2.GridMaxSizeperDimension.x": "4294967295(0xffffffff)",
+    "Agent2.GridMaxSizeperDimension.y": "4294967295(0xffffffff)",
+    "Agent2.GridMaxSizeperDimension.z": "4294967295(0xffffffff)",
+    "Agent2.Maxfbarriers/Workgrp": "32",
+    "Agent2.PoolInfo.Pool1.Segment": "GLOBAL",
+    "Agent2.PoolInfo.Pool1.FLAGS": "COARSEGRAINED",
+    "Agent2.PoolInfo.Pool1.Size": "31440896(0x1dfc000)KB",
+    "Agent2.PoolInfo.Pool1.Allocatable": "TRUE",
+    "Agent2.PoolInfo.Pool1.AllocGranule": "4KB",
+    "Agent2.PoolInfo.Pool1.AllocAlignment": "4KB",
+    "Agent2.PoolInfo.Pool1.Accessiblebyall": "FALSE",
+    "Agent2.PoolInfo.Pool2.Segment": "GROUP",
+    "Agent2.PoolInfo.Pool2.Size": "64(0x40)KB",
+    "Agent2.PoolInfo.Pool2.Allocatable": "FALSE",
+    "Agent2.PoolInfo.Pool2.AllocGranule": "0KB",
+    "Agent2.PoolInfo.Pool2.AllocAlignment": "0KB",
+    "Agent2.PoolInfo.Pool2.Accessiblebyall": "FALSE",
+    "Agent2.ISAInfo.ISA1.Name": "amdgcn-amd-amdhsa--gfx1030",
+    "Agent2.ISAInfo.ISA1.MachineModels": "HSA_MACHINE_MODEL_LARGE",
+    "Agent2.ISAInfo.ISA1.Profiles": "HSA_PROFILE_BASE",
+    "Agent2.ISAInfo.ISA1.DefaultRoundingMode": "NEAR",
+    "Agent2.ISAInfo.ISA1.DefaultRoundingMode": "NEAR",
+    "Agent2.ISAInfo.ISA1.Fastf16": "TRUE",
+    "Agent2.ISAInfo.ISA1.WorkgroupMaxSize": "1024(0x400)",
+    "Agent2.ISAInfo.ISA1.WorkgroupMaxSizeperDimension.x": "1024(0x400)",
+    "Agent2.ISAInfo.ISA1.WorkgroupMaxSizeperDimension.y": "1024(0x400)",
+    "Agent2.ISAInfo.ISA1.WorkgroupMaxSizeperDimension.z": "1024(0x400)",
+    "Agent2.ISAInfo.ISA1.GridMaxSize": "4294967295(0xffffffff)",
+    "Agent2.ISAInfo.ISA1.GridMaxSizeperDimension.x": "4294967295(0xffffffff)",
+    "Agent2.ISAInfo.ISA1.GridMaxSizeperDimension.y": "4294967295(0xffffffff)",
+    "Agent2.ISAInfo.ISA1.GridMaxSizeperDimension.z": "4294967295(0xffffffff)",
+    "Agent2.ISAInfo.ISA1.FBarrierMaxSize": "32"
+  }
+}
