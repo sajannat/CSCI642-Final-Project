@@ -43,7 +43,7 @@ int main(int argc, char** argv)
     int blockSize = 256;
     int gridSize = (num_values + blockSize - 1) / blockSize;
 
-    float gamma = 4.0;
+    float gamma = 0.3;
 
     // Start to count execution time of GPU version
     hipEventRecord(start, 0);
